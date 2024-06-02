@@ -1,0 +1,15 @@
+li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+li div {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+li div:hover {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}

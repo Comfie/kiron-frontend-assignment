@@ -1,0 +1,26 @@
+<div >
+  <div class="teams">
+      <h1>Football Playout</h1>
+  </div>
+
+  <div class="teams">
+    <button (click)="startPlayout()">Start Playout</button>
+  </div>
+
+  <div *ngFor="let match of matches" class="match">
+    <div class="teams">
+      <div class="team">
+        <img [src]="'/assets/team-badges/' + match.homeTeamAbbr + '.png'" alt="{{ match.homeTeamAbbr }}" class="team-badge">
+        <span class="team-abbr">{{ match.homeTeamAbbr }}</span>
+      </div>
+      <span class="vs">vs</span>
+      <div class="team">
+        <img [src]="'/assets/team-badges/' + match.awayTeamAbbr + '.png'" alt="{{ match.awayTeamAbbr }}" class="team-badge">
+        <span class="team-abbr">{{ match.awayTeamAbbr }}</span>
+      </div>
+    </div>
+    <p class="score">
+      {{ getScoreText(match) }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div *ngIf="bitcoinPrice">
+  <h2>Bitcoin Price</h2>
+  <p>Time: {{ bitcoinPrice.time.updated }}</p>
+  <p>USD: {{ bitcoinPrice.bpi.USD.rate }}</p>
+  <p>GBP: {{ bitcoinPrice.bpi.GBP.rate }}</p>
+  <p>EUR: {{ bitcoinPrice.bpi.EUR.rate }}</p>
+  <p>Disclaimer : {{ bitcoinPrice.disclaimer }}</p>
+</div>

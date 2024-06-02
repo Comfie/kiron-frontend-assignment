@@ -1,0 +1,19 @@
+<div>
+  <h1>Scene Manager</h1>
+  <div class="tree">
+    <ng-container *ngIf="sceneData">
+      <ul>
+        <li *ngFor="let node of [sceneData]">
+          <app-tree-node [node]="node" (nodeSelected)="selectNode($event)"></app-tree-node>
+        </li>
+      </ul>
+    </ng-container>
+  </div>
+
+  <div class="properties-panel" *ngIf="selectedNode">
+    <h2>Properties</h2>
+    <div *ngFor="let key of getProperties(selectedNode)">
+      <strong>{{ key }}:</strong> {{ selectedNode[key] }}
+    </div>
+  </div>
+</div>

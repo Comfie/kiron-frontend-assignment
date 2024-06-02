@@ -1,0 +1,10 @@
+.tree {
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.properties-panel {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 300px;
+}
